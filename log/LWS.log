@@ -1,0 +1,98 @@
+2023-08-01 15:30:41,406 api_log main64.py[line:27] DEBUG ------- Attack Activity train -------
+2023-08-01 15:30:41,406 api_log main64.py[line:40] DEBUG -- train the LWS model ......
+2023-08-01 15:55:11,441 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 15:55:11,441 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 15:56:40,760 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 15:56:40,761 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:16:45,394 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 16:16:45,394 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:19:03,159 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 16:19:03,159 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:21:04,433 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 16:21:04,434 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:28:04,774 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 16:28:04,774 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:30:09,673 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 16:30:09,673 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:30:54,434 api_log main64.py[line:34] DEBUG ------- Attack Activity train -------
+2023-08-01 16:30:54,435 api_log main64.py[line:47] DEBUG -- train the LWS model ......
+2023-08-01 16:30:58,554 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 0.9491525423728814, 'f1-score': 0.9739130434782608, 'support': 59.0}, 'ddos2': {'precision': 0.972972972972973, 'recall': 0.9863013698630136, 'f1-score': 0.979591836734694, 'support': 73.0}, 'infiltration': {'precision': 0.9571428571428572, 'recall': 0.9852941176470589, 'f1-score': 0.9710144927536232, 'support': 68.0}, 'http_dos': {'precision': 0.9859154929577465, 'recall': 1.0, 'f1-score': 0.9929078014184397, 'support': 70.0}, 'brute_force': {'precision': 0.971830985915493, 'recall': 0.9857142857142858, 'f1-score': 0.9787234042553192, 'support': 70.0}, 'Andariel': {'precision': 0.953125, 'recall': 0.9838709677419355, 'f1-score': 0.9682539682539683, 'support': 62.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 6.0}, 'AZORult': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 57.0}, 'IcedID': {'precision': 0.9459459459459459, 'recall': 0.8974358974358975, 'f1-score': 0.9210526315789475, 'support': 39.0}, 'Raccon': {'precision': 0.9375, 'recall': 1.0, 'f1-score': 0.967741935483871, 'support': 45.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 60.0}, 'Wannacry': {'precision': 0.9821428571428571, 'recall': 1.0, 'f1-score': 0.9909909909909909, 'support': 55.0}, 'accuracy': 0.9743975903614458, 'macro avg': {'precision': 0.8922146760064894, 'recall': 0.8989807650645893, 'f1-score': 0.8953491754123428, 'support': 664.0}, 'weighted avg': {'precision': 0.9658825208864714, 'recall': 0.9743975903614458, 'f1-score': 0.969909538879312, 'support': 664.0}}
+2023-08-01 16:30:58,555 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[56  2  1  0  0  0  0  0  0  0  0  0]
+ [ 0 72  0  0  0  0  0  0  0  1  0  0]
+ [ 0  0 67  0  0  0  0  0  0  1  0  0]
+ [ 0  0  0 70  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0 69  0  0  0  1  0  0  0]
+ [ 0  0  0  0  0 61  0  0  0  0  0  1]
+ [ 0  0  1  1  0  2  0  0  1  1  0  0]
+ [ 0  0  0  0  0  0  0 57  0  0  0  0]
+ [ 0  0  1  0  2  1  0  0 35  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 45  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0 60  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0 55]]
+2023-08-01 16:30:58,555 api_log modelFunc2.py[line:124] DEBUG Accuracy: 97.439759
+2023-08-01 16:30:59,866 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.90625, 'recall': 0.9830508474576272, 'f1-score': 0.943089430894309, 'support': 59.0}, 'ddos2': {'precision': 1.0, 'recall': 0.9863013698630136, 'f1-score': 0.993103448275862, 'support': 73.0}, 'infiltration': {'precision': 1.0, 'recall': 0.9852941176470589, 'f1-score': 0.9925925925925926, 'support': 68.0}, 'http_dos': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 70.0}, 'brute_force': {'precision': 0.9710144927536232, 'recall': 0.9571428571428572, 'f1-score': 0.9640287769784173, 'support': 70.0}, 'Andariel': {'precision': 0.9830508474576272, 'recall': 0.9354838709677419, 'f1-score': 0.9586776859504132, 'support': 62.0}, 'APT29': {'precision': 1.0, 'recall': 0.16666666666666666, 'f1-score': 0.2857142857142857, 'support': 6.0}, 'AZORult': {'precision': 0.95, 'recall': 1.0, 'f1-score': 0.9743589743589743, 'support': 57.0}, 'IcedID': {'precision': 0.9285714285714286, 'recall': 1.0, 'f1-score': 0.962962962962963, 'support': 39.0}, 'Raccon': {'precision': 0.9782608695652174, 'recall': 1.0, 'f1-score': 0.989010989010989, 'support': 45.0}, 'Heartbleed': {'precision': 1.0, 'recall': 0.9833333333333333, 'f1-score': 0.9915966386554621, 'support': 60.0}, 'Wannacry': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 55.0}, 'accuracy': 0.9759036144578314, 'macro avg': {'precision': 0.9764289698623246, 'recall': 0.9164394219231915, 'f1-score': 0.9212613154495224, 'support': 664.0}, 'weighted avg': {'precision': 0.9770706956021792, 'recall': 0.9759036144578314, 'f1-score': 0.9734408900508107, 'support': 664.0}}
+2023-08-01 16:30:59,867 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[58  0  0  0  0  0  0  0  1  0  0  0]
+ [ 1 72  0  0  0  0  0  0  0  0  0  0]
+ [ 1  0 67  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0 70  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0 67  0  0  0  1  1  0  0]
+ [ 1  0  0  0  1 58  0  1  1  0  0  0]
+ [ 1  0  0  0  1  1  1  2  0  0  0  0]
+ [ 0  0  0  0  0  0  0 57  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 39  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 45  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0 59  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0 55]]
+2023-08-01 16:30:59,867 api_log modelFunc2.py[line:124] DEBUG Accuracy: 97.590361
+2023-08-01 16:31:03,629 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.9666666666666667, 'recall': 0.9830508474576272, 'f1-score': 0.9747899159663865, 'support': 59.0}, 'ddos2': {'precision': 0.948051948051948, 'recall': 1.0, 'f1-score': 0.9733333333333333, 'support': 73.0}, 'infiltration': {'precision': 0.9848484848484849, 'recall': 0.9558823529411765, 'f1-score': 0.9701492537313432, 'support': 68.0}, 'http_dos': {'precision': 0.9848484848484849, 'recall': 0.9285714285714286, 'f1-score': 0.9558823529411765, 'support': 70.0}, 'brute_force': {'precision': 0.9852941176470589, 'recall': 0.9571428571428572, 'f1-score': 0.9710144927536232, 'support': 70.0}, 'Andariel': {'precision': 0.9682539682539683, 'recall': 0.9838709677419355, 'f1-score': 0.976, 'support': 62.0}, 'APT29': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 6.0}, 'AZORult': {'precision': 0.9827586206896551, 'recall': 1.0, 'f1-score': 0.9913043478260869, 'support': 57.0}, 'IcedID': {'precision': 0.975, 'recall': 1.0, 'f1-score': 0.9873417721518987, 'support': 39.0}, 'Raccon': {'precision': 0.9782608695652174, 'recall': 1.0, 'f1-score': 0.989010989010989, 'support': 45.0}, 'Heartbleed': {'precision': 1.0, 'recall': 0.9833333333333333, 'f1-score': 0.9915966386554621, 'support': 60.0}, 'Wannacry': {'precision': 0.9818181818181818, 'recall': 0.9818181818181818, 'f1-score': 0.9818181818181818, 'support': 55.0}, 'accuracy': 0.9774096385542169, 'macro avg': {'precision': 0.9796501118658055, 'recall': 0.9811391640838784, 'f1-score': 0.9801867731823735, 'support': 664.0}, 'weighted avg': {'precision': 0.9777357397997014, 'recall': 0.9774096385542169, 'f1-score': 0.9773235490851668, 'support': 664.0}}
+2023-08-01 16:31:03,630 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[58  1  0  0  0  0  0  0  0  0  0  0]
+ [ 0 73  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0 65  1  0  0  0  1  0  0  0  1]
+ [ 0  1  1 65  1  2  0  0  0  0  0  0]
+ [ 2  0  0  0 67  0  0  0  1  0  0  0]
+ [ 0  0  0  0  0 61  0  0  0  1  0  0]
+ [ 0  0  0  0  0  0  6  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0 57  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 39  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 45  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0 59  0]
+ [ 0  1  0  0  0  0  0  0  0  0  0 54]]
+2023-08-01 16:31:03,630 api_log modelFunc2.py[line:124] DEBUG Accuracy: 97.740964
+2023-08-01 16:31:06,126 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.9833333333333333, 'recall': 1.0, 'f1-score': 0.9915966386554621, 'support': 59.0}, 'ddos2': {'precision': 1.0, 'recall': 0.9863013698630136, 'f1-score': 0.993103448275862, 'support': 73.0}, 'infiltration': {'precision': 0.9705882352941176, 'recall': 0.9705882352941176, 'f1-score': 0.9705882352941176, 'support': 68.0}, 'http_dos': {'precision': 0.971830985915493, 'recall': 0.9857142857142858, 'f1-score': 0.9787234042553192, 'support': 70.0}, 'brute_force': {'precision': 0.9857142857142858, 'recall': 0.9857142857142858, 'f1-score': 0.9857142857142858, 'support': 70.0}, 'Andariel': {'precision': 1.0, 'recall': 0.9838709677419355, 'f1-score': 0.991869918699187, 'support': 62.0}, 'APT29': {'precision': 1.0, 'recall': 0.6666666666666666, 'f1-score': 0.8, 'support': 6.0}, 'AZORult': {'precision': 0.9827586206896551, 'recall': 1.0, 'f1-score': 0.9913043478260869, 'support': 57.0}, 'IcedID': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 39.0}, 'Raccon': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 45.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 60.0}, 'Wannacry': {'precision': 0.9642857142857143, 'recall': 0.9818181818181818, 'f1-score': 0.972972972972973, 'support': 55.0}, 'accuracy': 0.9864457831325302, 'macro avg': {'precision': 0.9882092646027165, 'recall': 0.9633894994010407, 'f1-score': 0.9729894376411079, 'support': 664.0}, 'weighted avg': {'precision': 0.9865930592556865, 'recall': 0.9864457831325302, 'f1-score': 0.9861825120506514, 'support': 664.0}}
+2023-08-01 16:31:06,127 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[59  0  0  0  0  0  0  0  0  0  0  0]
+ [ 0 72  0  0  0  0  0  0  0  0  0  1]
+ [ 0  0 66  1  0  0  0  0  0  0  0  1]
+ [ 0  0  1 69  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0 69  0  0  0  0  0  0  0]
+ [ 0  0  0  1  0 61  0  0  0  0  0  0]
+ [ 0  0  1  0  1  0  4  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0 57  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 39  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 45  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0 60  0]
+ [ 0  0  0  0  0  0  0  1  0  0  0 54]]
+2023-08-01 16:31:06,127 api_log modelFunc2.py[line:124] DEBUG Accuracy: 98.644578
+2023-08-01 16:31:07,397 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 59.0}, 'ddos2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 73.0}, 'infiltration': {'precision': 1.0, 'recall': 0.9705882352941176, 'f1-score': 0.9850746268656716, 'support': 68.0}, 'http_dos': {'precision': 0.9722222222222222, 'recall': 1.0, 'f1-score': 0.9859154929577464, 'support': 70.0}, 'brute_force': {'precision': 0.9859154929577465, 'recall': 1.0, 'f1-score': 0.9929078014184397, 'support': 70.0}, 'Andariel': {'precision': 0.9672131147540983, 'recall': 0.9516129032258065, 'f1-score': 0.959349593495935, 'support': 62.0}, 'APT29': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 6.0}, 'AZORult': {'precision': 0.9661016949152542, 'recall': 1.0, 'f1-score': 0.9827586206896551, 'support': 57.0}, 'IcedID': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 39.0}, 'Raccon': {'precision': 1.0, 'recall': 0.9555555555555556, 'f1-score': 0.9772727272727273, 'support': 45.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 60.0}, 'Wannacry': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 55.0}, 'accuracy': 0.9894578313253012, 'macro avg': {'precision': 0.9909543770707767, 'recall': 0.9898130578396233, 'f1-score': 0.9902732385583479, 'support': 664.0}, 'weighted avg': {'precision': 0.98961543642699, 'recall': 0.9894578313253012, 'f1-score': 0.9894230333381472, 'support': 664.0}}
+2023-08-01 16:31:07,398 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[59  0  0  0  0  0  0  0  0  0  0  0]
+ [ 0 73  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0 66  1  0  1  0  0  0  0  0  0]
+ [ 0  0  0 70  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0 70  0  0  0  0  0  0  0]
+ [ 0  0  0  0  1 59  0  2  0  0  0  0]
+ [ 0  0  0  0  0  0  6  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0 57  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 39  0  0  0]
+ [ 0  0  0  1  0  1  0  0  0 43  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0 60  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0 55]]
+2023-08-01 16:31:07,398 api_log modelFunc2.py[line:124] DEBUG Accuracy: 98.945783

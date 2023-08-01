@@ -23,9 +23,9 @@ class MyDataset(Dataset):
 #device = torch.device('cpu')#('cuda' if torch.cuda.is_available() else 'cpu')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 cuda = torch.cuda.is_available()
-train_dataset = S2sDataset(usage="train", path="/home/ubuntu/wcmc_attack_activity_detect_code/test/miss_s2s_msg64_more")
-miss_test_dataset = S2sDataset(usage="test", path="/home/ubuntu/wcmc_attack_activity_detect_code/test/miss_s2s_msg64_more")
-false_test_dataset = S2sDataset(usage="test", path="/home/ubuntu/wcmc_attack_activity_detect_code/test/false_s2s_msg64_more")
+train_dataset = S2sDataset(usage="train", path="/home/ubuntu/LActDet/test/miss_s2s_msg64_more")
+miss_test_dataset = S2sDataset(usage="test", path="/home/ubuntu/LActDet/test/miss_s2s_msg64_more")
+false_test_dataset = S2sDataset(usage="test", path="/home/ubuntu/LActDet/test/false_s2s_msg64_more")
 
 BATCH_SIZE = 128
 kwargs = {'num_workers': 1, 'pin_memory': True} if cuda else {}
@@ -183,15 +183,15 @@ if __name__ == "__main__":
     CLIP = 1
     test_losses = []
     best_train_loss = float('inf')
-    miss_train_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/train_miss_msg64_more.t'
-    miss_test_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/test_miss_msg64_more.t'
-    false_train_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/train_false_msg64_more.t'
-    false_test_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/test_false_msg64_more.t'
+    miss_train_path = 'dataset/LActDet/miss_train.t'
+    miss_test_path = 'dataset/LActDet/miss_test.t'
+    false_train_path = 'dataset/LActDet/false_train.t'
+    false_test_path = 'dataset/LActDet/false_test.t'
     # for phase evaluate
-    miss_train_phase_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/train_miss_phase.t'
-    miss_test_phase_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/test_miss_phase.t'
-    false_train_phase_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/train_false_phase.t'
-    false_test_phase_path = '/home/ubuntu/wcmc_attack_activity_detect_code/dataset/test_false_phase.t'
+    miss_train_phase_path = 'dataset/LWS/miss_train.t'
+    miss_test_phase_path = 'dataset/LWS/miss_test.t'
+    false_train_phase_path = 'dataset/LWS/false_train.t'
+    false_test_phase_path = 'dataset/LWS/false_test.t'
 
 
 
@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
         if train_loss < best_train_loss:
             best_train_loss = train_loss
-            torch.save(model.state_dict(), 'tut1-model.pt')
+            torch.save(model.state_dict(), 'checkout/tut1-model.pt')
 
         print(f'Epoch: {epoch + 1:02} | Time: {epoch_mins}m {epoch_secs}s')
         #print(f'\tTrain Loss: {train_loss:.3f}')

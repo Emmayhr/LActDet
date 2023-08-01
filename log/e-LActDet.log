@@ -1,0 +1,251 @@
+2023-08-01 16:36:43,354 api_log main64.py[line:43] DEBUG ------- Attack Activity train -------
+2023-08-01 16:36:43,354 api_log main64.py[line:56] DEBUG -- train the LWS model ......
+2023-08-01 16:56:13,130 api_log modelFunc2.py[line:44] DEBUG ------- Attack Activity train -------
+2023-08-01 16:56:16,432 api_log modelFunc2.py[line:81] ERROR Epoch [1/40], Train Loss: 0.01179
+2023-08-01 16:56:16,969 api_log modelFunc2.py[line:81] ERROR Epoch [2/40], Train Loss: 0.00575
+2023-08-01 16:56:17,494 api_log modelFunc2.py[line:81] ERROR Epoch [3/40], Train Loss: 0.00545
+2023-08-01 16:56:18,022 api_log modelFunc2.py[line:81] ERROR Epoch [4/40], Train Loss: 0.00549
+2023-08-01 16:56:18,552 api_log modelFunc2.py[line:81] ERROR Epoch [5/40], Train Loss: 0.00539
+2023-08-01 16:56:18,799 api_log modelFunc2.py[line:126] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 102.0}, 'ddos2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 95.0}, 'infiltration': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 99.0}, 'http_dos': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 112.0}, 'brute_force': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 97.0}, 'Andariel': {'precision': 0.4857142857142857, 'recall': 0.17, 'f1-score': 0.2518518518518519, 'support': 100.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 14.0}, 'AZORult': {'precision': 0.2777777777777778, 'recall': 0.38461538461538464, 'f1-score': 0.3225806451612903, 'support': 91.0}, 'IcedID': {'precision': 0.35135135135135137, 'recall': 0.19696969696969696, 'f1-score': 0.2524271844660194, 'support': 66.0}, 'Raccon': {'precision': 0.3128834355828221, 'recall': 0.5666666666666667, 'f1-score': 0.4031620553359684, 'support': 90.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 108.0}, 'Wannacry': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 98.0}, 'accuracy': 0.7714552238805971, 'macro avg': {'precision': 0.7023105708688532, 'recall': 0.6931876456876457, 'f1-score': 0.6858351447345942, 'support': 1072.0}, 'weighted avg': {'precision': 0.7800353589000462, 'recall': 0.7714552238805971, 'f1-score': 0.7635119431435233, 'support': 1072.0}}
+2023-08-01 16:56:18,800 api_log modelFunc2.py[line:127] DEBUG Confusion matrix: 
+[[102   0   0   0   0   0   0   0   0   0   0   0]
+ [  0  95   0   0   0   0   0   0   0   0   0   0]
+ [  0   0  99   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 112   0   0   0   0   0   0   0   0]
+ [  0   0   0   0  97   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  17   0  33   9  41   0   0]
+ [  0   0   0   0   0   1   0   6   3   4   0   0]
+ [  0   0   0   0   0   6   0  35   9  41   0   0]
+ [  0   0   0   0   0   3   0  24  13  26   0   0]
+ [  0   0   0   0   0   8   0  28   3  51   0   0]
+ [  0   0   0   0   0   0   0   0   0   0 108   0]
+ [  0   0   0   0   0   0   0   0   0   0   0  98]]
+2023-08-01 16:56:18,800 api_log modelFunc2.py[line:128] DEBUG Accuracy: 77.145522
+2023-08-01 16:56:19,195 api_log modelFunc2.py[line:81] ERROR Epoch [6/40], Train Loss: 0.00544
+2023-08-01 16:56:19,733 api_log modelFunc2.py[line:81] ERROR Epoch [7/40], Train Loss: 0.00316
+2023-08-01 16:56:20,262 api_log modelFunc2.py[line:81] ERROR Epoch [8/40], Train Loss: 0.00196
+2023-08-01 16:56:20,806 api_log modelFunc2.py[line:81] ERROR Epoch [9/40], Train Loss: 0.00136
+2023-08-01 16:56:21,336 api_log modelFunc2.py[line:81] ERROR Epoch [10/40], Train Loss: 0.00116
+2023-08-01 16:56:21,565 api_log modelFunc2.py[line:126] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 102.0}, 'ddos2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 95.0}, 'infiltration': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 99.0}, 'http_dos': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 112.0}, 'brute_force': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 97.0}, 'Andariel': {'precision': 0.6060606060606061, 'recall': 0.8, 'f1-score': 0.689655172413793, 'support': 100.0}, 'APT29': {'precision': 1.0, 'recall': 0.9285714285714286, 'f1-score': 0.962962962962963, 'support': 14.0}, 'AZORult': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 91.0}, 'IcedID': {'precision': 0.42857142857142855, 'recall': 0.22727272727272727, 'f1-score': 0.297029702970297, 'support': 66.0}, 'Raccon': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 90.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 108.0}, 'Wannacry': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 98.0}, 'accuracy': 0.9328358208955224, 'macro avg': {'precision': 0.9195526695526696, 'recall': 0.912987012987013, 'f1-score': 0.9124706531955878, 'support': 1072.0}, 'weighted avg': {'precision': 0.9280706855333721, 'recall': 0.9328358208955224, 'f1-score': 0.9272863424616609, 'support': 1072.0}}
+2023-08-01 16:56:21,565 api_log modelFunc2.py[line:127] DEBUG Confusion matrix: 
+[[102   0   0   0   0   0   0   0   0   0   0   0]
+ [  0  95   0   0   0   0   0   0   0   0   0   0]
+ [  0   0  99   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 112   0   0   0   0   0   0   0   0]
+ [  0   0   0   0  97   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  80   0   0  20   0   0   0]
+ [  0   0   0   0   0   1  13   0   0   0   0   0]
+ [  0   0   0   0   0   0   0  91   0   0   0   0]
+ [  0   0   0   0   0  51   0   0  15   0   0   0]
+ [  0   0   0   0   0   0   0   0   0  90   0   0]
+ [  0   0   0   0   0   0   0   0   0   0 108   0]
+ [  0   0   0   0   0   0   0   0   0   0   0  98]]
+2023-08-01 16:56:21,565 api_log modelFunc2.py[line:128] DEBUG Accuracy: 93.283582
+2023-08-01 16:56:21,969 api_log modelFunc2.py[line:81] ERROR Epoch [11/40], Train Loss: 0.00110
+2023-08-01 16:56:22,493 api_log modelFunc2.py[line:81] ERROR Epoch [12/40], Train Loss: 0.00155
+2023-08-01 16:56:23,031 api_log modelFunc2.py[line:81] ERROR Epoch [13/40], Train Loss: 0.00109
+2023-08-01 16:56:23,557 api_log modelFunc2.py[line:81] ERROR Epoch [14/40], Train Loss: 0.00045
+2023-08-01 16:56:24,094 api_log modelFunc2.py[line:81] ERROR Epoch [15/40], Train Loss: 0.00014
+2023-08-01 16:56:24,321 api_log modelFunc2.py[line:126] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 102.0}, 'ddos2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 95.0}, 'infiltration': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 99.0}, 'http_dos': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 112.0}, 'brute_force': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 97.0}, 'Andariel': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 100.0}, 'APT29': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 14.0}, 'AZORult': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 91.0}, 'IcedID': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 66.0}, 'Raccon': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 90.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 108.0}, 'Wannacry': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 98.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 1072.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 1072.0}}
+2023-08-01 16:56:24,321 api_log modelFunc2.py[line:127] DEBUG Confusion matrix: 
+[[102   0   0   0   0   0   0   0   0   0   0   0]
+ [  0  95   0   0   0   0   0   0   0   0   0   0]
+ [  0   0  99   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 112   0   0   0   0   0   0   0   0]
+ [  0   0   0   0  97   0   0   0   0   0   0   0]
+ [  0   0   0   0   0 100   0   0   0   0   0   0]
+ [  0   0   0   0   0   0  14   0   0   0   0   0]
+ [  0   0   0   0   0   0   0  91   0   0   0   0]
+ [  0   0   0   0   0   0   0   0  66   0   0   0]
+ [  0   0   0   0   0   0   0   0   0  90   0   0]
+ [  0   0   0   0   0   0   0   0   0   0 108   0]
+ [  0   0   0   0   0   0   0   0   0   0   0  98]]
+2023-08-01 16:56:24,321 api_log modelFunc2.py[line:128] DEBUG Accuracy: 100.000000
+2023-08-01 16:56:24,717 api_log modelFunc2.py[line:81] ERROR Epoch [16/40], Train Loss: 0.00009
+2023-08-01 16:56:25,248 api_log modelFunc2.py[line:81] ERROR Epoch [17/40], Train Loss: 0.00007
+2023-08-01 16:56:25,808 api_log modelFunc2.py[line:81] ERROR Epoch [18/40], Train Loss: 0.00005
+2023-08-01 16:56:26,345 api_log modelFunc2.py[line:81] ERROR Epoch [19/40], Train Loss: 0.00003
+2023-08-01 16:56:26,880 api_log modelFunc2.py[line:81] ERROR Epoch [20/40], Train Loss: 0.00003
+2023-08-01 16:56:27,494 api_log modelFunc2.py[line:81] ERROR Epoch [21/40], Train Loss: 0.00002
+2023-08-01 16:56:28,021 api_log modelFunc2.py[line:81] ERROR Epoch [22/40], Train Loss: 0.00003
+2023-08-01 16:56:28,546 api_log modelFunc2.py[line:81] ERROR Epoch [23/40], Train Loss: 0.00002
+2023-08-01 16:56:29,073 api_log modelFunc2.py[line:81] ERROR Epoch [24/40], Train Loss: 0.00002
+2023-08-01 16:56:29,602 api_log modelFunc2.py[line:81] ERROR Epoch [25/40], Train Loss: 0.00001
+2023-08-01 16:56:30,233 api_log modelFunc2.py[line:81] ERROR Epoch [26/40], Train Loss: 0.00001
+2023-08-01 16:56:30,768 api_log modelFunc2.py[line:81] ERROR Epoch [27/40], Train Loss: 0.00001
+2023-08-01 16:56:31,302 api_log modelFunc2.py[line:81] ERROR Epoch [28/40], Train Loss: 0.00001
+2023-08-01 16:56:31,826 api_log modelFunc2.py[line:81] ERROR Epoch [29/40], Train Loss: 0.00001
+2023-08-01 16:56:32,353 api_log modelFunc2.py[line:81] ERROR Epoch [30/40], Train Loss: 0.00011
+2023-08-01 16:56:32,973 api_log modelFunc2.py[line:81] ERROR Epoch [31/40], Train Loss: 0.00002
+2023-08-01 16:56:33,496 api_log modelFunc2.py[line:81] ERROR Epoch [32/40], Train Loss: 0.00001
+2023-08-01 16:56:34,022 api_log modelFunc2.py[line:81] ERROR Epoch [33/40], Train Loss: 0.00001
+2023-08-01 16:56:34,548 api_log modelFunc2.py[line:81] ERROR Epoch [34/40], Train Loss: 0.00001
+2023-08-01 16:56:35,077 api_log modelFunc2.py[line:81] ERROR Epoch [35/40], Train Loss: 0.00001
+2023-08-01 16:56:35,715 api_log modelFunc2.py[line:81] ERROR Epoch [36/40], Train Loss: 0.00001
+2023-08-01 16:56:36,238 api_log modelFunc2.py[line:81] ERROR Epoch [37/40], Train Loss: 0.00001
+2023-08-01 16:56:36,769 api_log modelFunc2.py[line:81] ERROR Epoch [38/40], Train Loss: 0.00001
+2023-08-01 16:56:37,297 api_log modelFunc2.py[line:81] ERROR Epoch [39/40], Train Loss: 0.00000
+2023-08-01 16:56:37,821 api_log modelFunc2.py[line:81] ERROR Epoch [40/40], Train Loss: 0.00000
+2023-08-01 17:02:01,401 api_log main64.py[line:44] DEBUG ------- Attack Activity train -------
+2023-08-01 17:02:01,401 api_log main64.py[line:57] DEBUG -- train the LWS model ......
+2023-08-01 17:10:20,941 api_log main64.py[line:44] DEBUG ------- Attack Activity train -------
+2023-08-01 17:10:20,942 api_log main64.py[line:57] DEBUG -- train the LWS model ......
+2023-08-01 17:11:49,871 api_log main64.py[line:44] DEBUG ------- Attack Activity train -------
+2023-08-01 17:11:49,872 api_log main64.py[line:57] DEBUG -- train the LWS model ......
+2023-08-01 17:13:10,710 api_log main64.py[line:44] DEBUG ------- Attack Activity train -------
+2023-08-01 17:13:10,710 api_log main64.py[line:57] DEBUG -- train the LWS model ......
+2023-08-01 17:13:14,003 api_log modelFunc2.py[line:77] DEBUG Epoch [1/40], Train Loss: 0.01554
+2023-08-01 17:13:14,530 api_log modelFunc2.py[line:77] DEBUG Epoch [2/40], Train Loss: 0.00805
+2023-08-01 17:13:15,062 api_log modelFunc2.py[line:77] DEBUG Epoch [3/40], Train Loss: 0.00670
+2023-08-01 17:13:15,608 api_log modelFunc2.py[line:77] DEBUG Epoch [4/40], Train Loss: 0.00683
+2023-08-01 17:13:16,132 api_log modelFunc2.py[line:77] DEBUG Epoch [5/40], Train Loss: 0.00620
+2023-08-01 17:13:16,359 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.989247311827957, 'recall': 0.9583333333333334, 'f1-score': 0.9735449735449735, 'support': 96.0}, 'ddos2': {'precision': 0.9814814814814815, 'recall': 1.0, 'f1-score': 0.9906542056074767, 'support': 106.0}, 'infiltration': {'precision': 0.9663865546218487, 'recall': 0.9913793103448276, 'f1-score': 0.9787234042553192, 'support': 116.0}, 'http_dos': {'precision': 0.9661016949152542, 'recall': 0.991304347826087, 'f1-score': 0.9785407725321889, 'support': 115.0}, 'brute_force': {'precision': 0.99, 'recall': 0.9519230769230769, 'f1-score': 0.9705882352941176, 'support': 104.0}, 'Andariel': {'precision': 0.3770491803278688, 'recall': 0.23958333333333334, 'f1-score': 0.2929936305732484, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.27522935779816515, 'recall': 0.3488372093023256, 'f1-score': 0.30769230769230765, 'support': 86.0}, 'IcedID': {'precision': 0.2777777777777778, 'recall': 0.09615384615384616, 'f1-score': 0.14285714285714288, 'support': 52.0}, 'Raccon': {'precision': 0.2708333333333333, 'recall': 0.4431818181818182, 'f1-score': 0.3362068965517241, 'support': 88.0}, 'Heartbleed': {'precision': 0.9693877551020408, 'recall': 1.0, 'f1-score': 0.9844559585492229, 'support': 95.0}, 'Wannacry': {'precision': 0.9807692307692307, 'recall': 0.9902912621359223, 'f1-score': 0.9855072463768114, 'support': 103.0}, 'accuracy': 0.7649253731343284, 'macro avg': {'precision': 0.6703553064962464, 'recall': 0.6675822947945474, 'f1-score': 0.6618137311528779, 'support': 1072.0}, 'weighted avg': {'precision': 0.761588251481091, 'recall': 0.7649253731343284, 'f1-score': 0.7575645627059685, 'support': 1072.0}}
+2023-08-01 17:13:16,360 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 92   1   0   0   0   0   0   0   0   0   1   2]
+ [  0 106   0   0   0   0   0   0   0   0   0   0]
+ [  0   1 115   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 114   0   0   0   0   0   0   1   0]
+ [  1   0   2   2  99   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  23   0  35   4  34   0   0]
+ [  0   0   0   0   0   1   0   7   1   6   0   0]
+ [  0   0   0   2   1  14   0  30   3  36   0   0]
+ [  0   0   1   0   0   8   0   9   5  29   0   0]
+ [  0   0   1   0   0  15   0  28   5  39   0   0]
+ [  0   0   0   0   0   0   0   0   0   0  95   0]
+ [  0   0   0   0   0   0   0   0   0   0   1 102]]
+2023-08-01 17:13:16,360 api_log modelFunc2.py[line:124] DEBUG Accuracy: 76.492537
+2023-08-01 17:13:16,767 api_log modelFunc2.py[line:77] DEBUG Epoch [6/40], Train Loss: 0.00596
+2023-08-01 17:13:17,320 api_log modelFunc2.py[line:77] DEBUG Epoch [7/40], Train Loss: 0.00774
+2023-08-01 17:13:17,854 api_log modelFunc2.py[line:77] DEBUG Epoch [8/40], Train Loss: 0.00620
+2023-08-01 17:13:18,375 api_log modelFunc2.py[line:77] DEBUG Epoch [9/40], Train Loss: 0.00597
+2023-08-01 17:13:18,930 api_log modelFunc2.py[line:77] DEBUG Epoch [10/40], Train Loss: 0.00565
+2023-08-01 17:13:19,154 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.979381443298969, 'recall': 0.9895833333333334, 'f1-score': 0.9844559585492227, 'support': 96.0}, 'ddos2': {'precision': 0.9906542056074766, 'recall': 1.0, 'f1-score': 0.9953051643192489, 'support': 106.0}, 'infiltration': {'precision': 0.9747899159663865, 'recall': 1.0, 'f1-score': 0.9872340425531915, 'support': 116.0}, 'http_dos': {'precision': 0.9913793103448276, 'recall': 1.0, 'f1-score': 0.9956709956709957, 'support': 115.0}, 'brute_force': {'precision': 0.9903846153846154, 'recall': 0.9903846153846154, 'f1-score': 0.9903846153846154, 'support': 104.0}, 'Andariel': {'precision': 0.5131578947368421, 'recall': 0.40625, 'f1-score': 0.4534883720930233, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.375, 'recall': 0.38372093023255816, 'f1-score': 0.3793103448275862, 'support': 86.0}, 'IcedID': {'precision': 0.38181818181818183, 'recall': 0.40384615384615385, 'f1-score': 0.3925233644859813, 'support': 52.0}, 'Raccon': {'precision': 0.38738738738738737, 'recall': 0.48863636363636365, 'f1-score': 0.43216080402010054, 'support': 88.0}, 'Heartbleed': {'precision': 1.0, 'recall': 0.9894736842105263, 'f1-score': 0.9947089947089947, 'support': 95.0}, 'Wannacry': {'precision': 0.9714285714285714, 'recall': 0.9902912621359223, 'f1-score': 0.9807692307692307, 'support': 103.0}, 'accuracy': 0.808768656716418, 'macro avg': {'precision': 0.7129484604977715, 'recall': 0.7201821952316227, 'f1-score': 0.7155009906151825, 'support': 1072.0}, 'weighted avg': {'precision': 0.8018928652885866, 'recall': 0.808768656716418, 'f1-score': 0.8042396989054369, 'support': 1072.0}}
+2023-08-01 17:13:19,155 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 95   0   0   0   0   0   0   0   0   0   0   1]
+ [  0 106   0   0   0   0   0   0   0   0   0   0]
+ [  0   0 116   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 115   0   0   0   0   0   0   0   0]
+ [  1   0   0   0 103   0   0   0   0   0   0   0]
+ [  1   0   1   0   0  39   0  12  22  21   0   0]
+ [  0   0   0   0   0   9   0   3   2   1   0   0]
+ [  0   0   0   0   1   9   0  33   5  37   0   1]
+ [  0   0   2   0   0  11   0   8  21   9   0   1]
+ [  0   0   0   1   0   8   0  31   5  43   0   0]
+ [  0   0   0   0   0   0   0   1   0   0  94   0]
+ [  0   1   0   0   0   0   0   0   0   0   0 102]]
+2023-08-01 17:13:19,155 api_log modelFunc2.py[line:124] DEBUG Accuracy: 80.876866
+2023-08-01 17:13:19,557 api_log modelFunc2.py[line:77] DEBUG Epoch [11/40], Train Loss: 0.00480
+2023-08-01 17:13:20,123 api_log modelFunc2.py[line:77] DEBUG Epoch [12/40], Train Loss: 0.00440
+2023-08-01 17:13:20,661 api_log modelFunc2.py[line:77] DEBUG Epoch [13/40], Train Loss: 0.00395
+2023-08-01 17:13:21,206 api_log modelFunc2.py[line:77] DEBUG Epoch [14/40], Train Loss: 0.00380
+2023-08-01 17:13:21,734 api_log modelFunc2.py[line:77] DEBUG Epoch [15/40], Train Loss: 0.00376
+2023-08-01 17:13:21,959 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.9791666666666666, 'recall': 0.9791666666666666, 'f1-score': 0.9791666666666666, 'support': 96.0}, 'ddos2': {'precision': 0.9904761904761905, 'recall': 0.9811320754716981, 'f1-score': 0.9857819905213271, 'support': 106.0}, 'infiltration': {'precision': 0.9830508474576272, 'recall': 1.0, 'f1-score': 0.9914529914529915, 'support': 116.0}, 'http_dos': {'precision': 0.9661016949152542, 'recall': 0.991304347826087, 'f1-score': 0.9785407725321889, 'support': 115.0}, 'brute_force': {'precision': 0.9903846153846154, 'recall': 0.9903846153846154, 'f1-score': 0.9903846153846154, 'support': 104.0}, 'Andariel': {'precision': 0.6090909090909091, 'recall': 0.6979166666666666, 'f1-score': 0.6504854368932038, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.46, 'recall': 0.26744186046511625, 'f1-score': 0.3382352941176471, 'support': 86.0}, 'IcedID': {'precision': 0.33962264150943394, 'recall': 0.34615384615384615, 'f1-score': 0.34285714285714286, 'support': 52.0}, 'Raccon': {'precision': 0.49193548387096775, 'recall': 0.6931818181818182, 'f1-score': 0.5754716981132075, 'support': 88.0}, 'Heartbleed': {'precision': 1.0, 'recall': 0.9894736842105263, 'f1-score': 0.9947089947089947, 'support': 95.0}, 'Wannacry': {'precision': 1.0, 'recall': 0.970873786407767, 'f1-score': 0.9852216748768473, 'support': 103.0}, 'accuracy': 0.8339552238805971, 'macro avg': {'precision': 0.7341524207809721, 'recall': 0.742252447286234, 'f1-score': 0.734358939843736, 'support': 1072.0}, 'weighted avg': {'precision': 0.824729008043543, 'recall': 0.8339552238805971, 'f1-score': 0.8255725111502594, 'support': 1072.0}}
+2023-08-01 17:13:21,959 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 94   0   1   1   0   0   0   0   0   0   0   0]
+ [  0 104   0   1   1   0   0   0   0   0   0   0]
+ [  0   0 116   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 114   0   0   0   0   0   1   0   0]
+ [  0   0   0   1 103   0   0   0   0   0   0   0]
+ [  0   0   1   0   0  67   0   1  27   0   0   0]
+ [  0   0   0   0   0   7   0   0   8   0   0   0]
+ [  0   0   0   0   0   1   0  23   0  62   0   0]
+ [  0   0   0   0   0  34   0   0  18   0   0   0]
+ [  0   0   0   0   0   1   0  26   0  61   0   0]
+ [  0   1   0   0   0   0   0   0   0   0  94   0]
+ [  2   0   0   1   0   0   0   0   0   0   0 100]]
+2023-08-01 17:13:21,959 api_log modelFunc2.py[line:124] DEBUG Accuracy: 83.395522
+2023-08-01 17:13:22,355 api_log modelFunc2.py[line:77] DEBUG Epoch [16/40], Train Loss: 0.00369
+2023-08-01 17:13:22,893 api_log modelFunc2.py[line:77] DEBUG Epoch [17/40], Train Loss: 0.00365
+2023-08-01 17:13:23,446 api_log modelFunc2.py[line:77] DEBUG Epoch [18/40], Train Loss: 0.00351
+2023-08-01 17:13:23,970 api_log modelFunc2.py[line:77] DEBUG Epoch [19/40], Train Loss: 0.00353
+2023-08-01 17:13:24,504 api_log modelFunc2.py[line:77] DEBUG Epoch [20/40], Train Loss: 0.00345
+2023-08-01 17:13:24,733 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 0.9895833333333334, 'recall': 0.9895833333333334, 'f1-score': 0.9895833333333334, 'support': 96.0}, 'ddos2': {'precision': 0.9809523809523809, 'recall': 0.9716981132075472, 'f1-score': 0.976303317535545, 'support': 106.0}, 'infiltration': {'precision': 0.9663865546218487, 'recall': 0.9913793103448276, 'f1-score': 0.9787234042553192, 'support': 116.0}, 'http_dos': {'precision': 0.9743589743589743, 'recall': 0.991304347826087, 'f1-score': 0.9827586206896551, 'support': 115.0}, 'brute_force': {'precision': 0.9714285714285714, 'recall': 0.9807692307692307, 'f1-score': 0.9760765550239234, 'support': 104.0}, 'Andariel': {'precision': 0.625, 'recall': 0.6770833333333334, 'f1-score': 0.65, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.48484848484848486, 'recall': 0.5581395348837209, 'f1-score': 0.5189189189189188, 'support': 86.0}, 'IcedID': {'precision': 0.36363636363636365, 'recall': 0.38461538461538464, 'f1-score': 0.37383177570093457, 'support': 52.0}, 'Raccon': {'precision': 0.5, 'recall': 0.42045454545454547, 'f1-score': 0.45679012345679015, 'support': 88.0}, 'Heartbleed': {'precision': 0.9894736842105263, 'recall': 0.9894736842105263, 'f1-score': 0.9894736842105263, 'support': 95.0}, 'Wannacry': {'precision': 0.9902912621359223, 'recall': 0.9902912621359223, 'f1-score': 0.9902912621359223, 'support': 103.0}, 'accuracy': 0.8348880597014925, 'macro avg': {'precision': 0.7363299674605339, 'recall': 0.7453993400095383, 'f1-score': 0.7402292496050724, 'support': 1072.0}, 'weighted avg': {'precision': 0.8253430100774262, 'recall': 0.8348880597014925, 'f1-score': 0.8294898133226273, 'support': 1072.0}}
+2023-08-01 17:13:24,733 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 95   0   1   0   0   0   0   0   0   0   0   0]
+ [  0 103   1   2   0   0   0   0   0   0   0   0]
+ [  0   1 115   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 114   1   0   0   0   0   0   0   0]
+ [  0   0   1   0 102   0   0   0   0   0   1   0]
+ [  1   0   0   0   0  65   0   1  29   0   0   0]
+ [  0   0   0   0   0   8   0   0   6   1   0   0]
+ [  0   0   1   0   1   0   0  48   0  36   0   0]
+ [  0   0   0   1   0  31   0   0  20   0   0   0]
+ [  0   0   0   0   0   0   0  50   0  37   0   1]
+ [  0   0   0   0   1   0   0   0   0   0  94   0]
+ [  0   1   0   0   0   0   0   0   0   0   0 102]]
+2023-08-01 17:13:24,733 api_log modelFunc2.py[line:124] DEBUG Accuracy: 83.488806
+2023-08-01 17:13:25,125 api_log modelFunc2.py[line:77] DEBUG Epoch [21/40], Train Loss: 0.00355
+2023-08-01 17:13:25,685 api_log modelFunc2.py[line:77] DEBUG Epoch [22/40], Train Loss: 0.00356
+2023-08-01 17:13:26,229 api_log modelFunc2.py[line:77] DEBUG Epoch [23/40], Train Loss: 0.00349
+2023-08-01 17:13:26,764 api_log modelFunc2.py[line:77] DEBUG Epoch [24/40], Train Loss: 0.00344
+2023-08-01 17:13:27,298 api_log modelFunc2.py[line:77] DEBUG Epoch [25/40], Train Loss: 0.00342
+2023-08-01 17:13:27,918 api_log modelFunc2.py[line:77] DEBUG Epoch [26/40], Train Loss: 0.00344
+2023-08-01 17:13:28,452 api_log modelFunc2.py[line:77] DEBUG Epoch [27/40], Train Loss: 0.00341
+2023-08-01 17:13:28,992 api_log modelFunc2.py[line:77] DEBUG Epoch [28/40], Train Loss: 0.00332
+2023-08-01 17:13:29,542 api_log modelFunc2.py[line:77] DEBUG Epoch [29/40], Train Loss: 0.00340
+2023-08-01 17:13:30,068 api_log modelFunc2.py[line:77] DEBUG Epoch [30/40], Train Loss: 0.00336
+2023-08-01 17:13:30,292 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 0.9895833333333334, 'f1-score': 0.9947643979057591, 'support': 96.0}, 'ddos2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 106.0}, 'infiltration': {'precision': 0.9829059829059829, 'recall': 0.9913793103448276, 'f1-score': 0.9871244635193134, 'support': 116.0}, 'http_dos': {'precision': 1.0, 'recall': 0.991304347826087, 'f1-score': 0.9956331877729258, 'support': 115.0}, 'brute_force': {'precision': 0.9903846153846154, 'recall': 0.9903846153846154, 'f1-score': 0.9903846153846154, 'support': 104.0}, 'Andariel': {'precision': 0.6538461538461539, 'recall': 0.7083333333333334, 'f1-score': 0.68, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.5125, 'recall': 0.47674418604651164, 'f1-score': 0.4939759036144578, 'support': 86.0}, 'IcedID': {'precision': 0.43333333333333335, 'recall': 0.5, 'f1-score': 0.4642857142857143, 'support': 52.0}, 'Raccon': {'precision': 0.532608695652174, 'recall': 0.5568181818181818, 'f1-score': 0.5444444444444444, 'support': 88.0}, 'Heartbleed': {'precision': 0.979381443298969, 'recall': 1.0, 'f1-score': 0.9895833333333333, 'support': 95.0}, 'Wannacry': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 103.0}, 'accuracy': 0.8535447761194029, 'macro avg': {'precision': 0.7570800187017691, 'recall': 0.767045609007241, 'f1-score': 0.7616830050217137, 'support': 1072.0}, 'weighted avg': {'precision': 0.8454341981813912, 'recall': 0.8535447761194029, 'f1-score': 0.8491865197691773, 'support': 1072.0}}
+2023-08-01 17:13:30,292 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 95   0   0   0   0   0   0   0   0   0   1   0]
+ [  0 106   0   0   0   0   0   0   0   0   0   0]
+ [  0   0 115   0   0   0   0   0   1   0   0   0]
+ [  0   0   0 114   0   0   0   0   0   0   1   0]
+ [  0   0   1   0 103   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  68   0   0  28   0   0   0]
+ [  0   0   0   0   0  10   0   0   5   0   0   0]
+ [  0   0   0   0   1   1   0  41   0  43   0   0]
+ [  0   0   1   0   0  25   0   0  26   0   0   0]
+ [  0   0   0   0   0   0   0  39   0  49   0   0]
+ [  0   0   0   0   0   0   0   0   0   0  95   0]
+ [  0   0   0   0   0   0   0   0   0   0   0 103]]
+2023-08-01 17:13:30,292 api_log modelFunc2.py[line:124] DEBUG Accuracy: 85.354478
+2023-08-01 17:13:30,707 api_log modelFunc2.py[line:77] DEBUG Epoch [31/40], Train Loss: 0.00335
+2023-08-01 17:13:31,245 api_log modelFunc2.py[line:77] DEBUG Epoch [32/40], Train Loss: 0.00337
+2023-08-01 17:13:31,786 api_log modelFunc2.py[line:77] DEBUG Epoch [33/40], Train Loss: 0.00343
+2023-08-01 17:13:32,318 api_log modelFunc2.py[line:77] DEBUG Epoch [34/40], Train Loss: 0.00323
+2023-08-01 17:13:32,866 api_log modelFunc2.py[line:77] DEBUG Epoch [35/40], Train Loss: 0.00354
+2023-08-01 17:13:33,093 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 0.96875, 'f1-score': 0.9841269841269841, 'support': 96.0}, 'ddos2': {'precision': 0.9719626168224299, 'recall': 0.9811320754716981, 'f1-score': 0.9765258215962441, 'support': 106.0}, 'infiltration': {'precision': 0.9827586206896551, 'recall': 0.9827586206896551, 'f1-score': 0.9827586206896551, 'support': 116.0}, 'http_dos': {'precision': 0.9827586206896551, 'recall': 0.991304347826087, 'f1-score': 0.9870129870129869, 'support': 115.0}, 'brute_force': {'precision': 0.9714285714285714, 'recall': 0.9807692307692307, 'f1-score': 0.9760765550239234, 'support': 104.0}, 'Andariel': {'precision': 0.5948275862068966, 'recall': 0.71875, 'f1-score': 0.6509433962264151, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.925, 'recall': 0.8604651162790697, 'f1-score': 0.891566265060241, 'support': 86.0}, 'IcedID': {'precision': 0.36, 'recall': 0.34615384615384615, 'f1-score': 0.35294117647058826, 'support': 52.0}, 'Raccon': {'precision': 0.8651685393258427, 'recall': 0.875, 'f1-score': 0.8700564971751412, 'support': 88.0}, 'Heartbleed': {'precision': 0.9895833333333334, 'recall': 1.0, 'f1-score': 0.9947643979057591, 'support': 95.0}, 'Wannacry': {'precision': 0.9903846153846154, 'recall': 1.0, 'f1-score': 0.9951690821256038, 'support': 103.0}, 'accuracy': 0.898320895522388, 'macro avg': {'precision': 0.80282270865675, 'recall': 0.8087569364324656, 'f1-score': 0.8051618152844618, 'support': 1072.0}, 'weighted avg': {'precision': 0.8904870913982067, 'recall': 0.898320895522388, 'f1-score': 0.8937449569171247, 'support': 1072.0}}
+2023-08-01 17:13:33,093 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 93   1   0   0   2   0   0   0   0   0   0   0]
+ [  0 104   0   1   0   0   0   0   0   0   0   1]
+ [  0   0 114   0   0   2   0   0   0   0   0   0]
+ [  0   1   0 114   0   0   0   0   0   0   0   0]
+ [  0   0   0   1 102   0   0   0   0   1   0   0]
+ [  0   0   0   0   0  69   0   0  27   0   0   0]
+ [  0   0   0   0   0  12   0   0   3   0   0   0]
+ [  0   1   0   0   0   0   0  74   0  11   0   0]
+ [  0   0   1   0   0  33   0   0  18   0   0   0]
+ [  0   0   1   0   1   0   0   6   2  77   1   0]
+ [  0   0   0   0   0   0   0   0   0   0  95   0]
+ [  0   0   0   0   0   0   0   0   0   0   0 103]]
+2023-08-01 17:13:33,094 api_log modelFunc2.py[line:124] DEBUG Accuracy: 89.832090
+2023-08-01 17:13:33,487 api_log modelFunc2.py[line:77] DEBUG Epoch [36/40], Train Loss: 0.00271
+2023-08-01 17:13:34,025 api_log modelFunc2.py[line:77] DEBUG Epoch [37/40], Train Loss: 0.00246
+2023-08-01 17:13:34,552 api_log modelFunc2.py[line:77] DEBUG Epoch [38/40], Train Loss: 0.00227
+2023-08-01 17:13:35,093 api_log modelFunc2.py[line:77] DEBUG Epoch [39/40], Train Loss: 0.00436
+2023-08-01 17:13:35,663 api_log modelFunc2.py[line:77] DEBUG Epoch [40/40], Train Loss: 0.00269
+2023-08-01 17:13:35,896 api_log modelFunc2.py[line:122] DEBUG report: 
+{'ddos1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'ddos2': {'precision': 1.0, 'recall': 0.9905660377358491, 'f1-score': 0.9952606635071091, 'support': 106.0}, 'infiltration': {'precision': 0.9910714285714286, 'recall': 0.9568965517241379, 'f1-score': 0.9736842105263158, 'support': 116.0}, 'http_dos': {'precision': 0.9827586206896551, 'recall': 0.991304347826087, 'f1-score': 0.9870129870129869, 'support': 115.0}, 'brute_force': {'precision': 1.0, 'recall': 0.9615384615384616, 'f1-score': 0.9803921568627451, 'support': 104.0}, 'Andariel': {'precision': 0.5779816513761468, 'recall': 0.65625, 'f1-score': 0.6146341463414634, 'support': 96.0}, 'APT29': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 15.0}, 'AZORult': {'precision': 0.9120879120879121, 'recall': 0.9651162790697675, 'f1-score': 0.9378531073446328, 'support': 86.0}, 'IcedID': {'precision': 0.3448275862068966, 'recall': 0.38461538461538464, 'f1-score': 0.3636363636363637, 'support': 52.0}, 'Raccon': {'precision': 0.9444444444444444, 'recall': 0.9659090909090909, 'f1-score': 0.9550561797752809, 'support': 88.0}, 'Heartbleed': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 95.0}, 'Wannacry': {'precision': 0.99, 'recall': 0.9611650485436893, 'f1-score': 0.9753694581280788, 'support': 103.0}, 'accuracy': 0.9057835820895522, 'macro avg': {'precision': 0.8119309702813736, 'recall': 0.8194467668302057, 'f1-score': 0.8152416060945814, 'support': 1072.0}, 'weighted avg': {'precision': 0.9010442832641197, 'recall': 0.9057835820895522, 'f1-score': 0.9029753831809252, 'support': 1072.0}}
+2023-08-01 17:13:35,897 api_log modelFunc2.py[line:123] DEBUG Confusion matrix: 
+[[ 96   0   0   0   0   0   0   0   0   0   0   0]
+ [  0 105   0   0   0   0   0   1   0   0   0   0]
+ [  0   0 111   0   0   2   0   0   1   2   0   0]
+ [  0   0   0 114   0   0   0   1   0   0   0   0]
+ [  0   0   1   1 100   0   0   1   0   0   0   1]
+ [  0   0   0   0   0  63   0   0  33   0   0   0]
+ [  0   0   0   0   0  11   0   0   4   0   0   0]
+ [  0   0   0   0   0   0   0  83   0   3   0   0]
+ [  0   0   0   0   0  32   0   0  20   0   0   0]
+ [  0   0   0   0   0   0   0   3   0  85   0   0]
+ [  0   0   0   0   0   0   0   0   0   0  95   0]
+ [  0   0   0   1   0   1   0   2   0   0   0  99]]
+2023-08-01 17:13:35,897 api_log modelFunc2.py[line:124] DEBUG Accuracy: 90.578358

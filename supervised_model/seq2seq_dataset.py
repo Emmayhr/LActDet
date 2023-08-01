@@ -17,7 +17,6 @@ from gensim.models import Doc2Vec
 # import torch.nn as nn
 
 import sys
-sys.path.append("json2mysql/")
 from log import ApiLog
 
 attack_phase = ['Reconnaissance', 'Resource_Development', 'Initial_Access', 'Execution', 'Persistence', 'Privilege_Escalation', 

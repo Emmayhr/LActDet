@@ -8,7 +8,7 @@
 import numpy as np
 from torch.utils.data import Dataset
 
-'''
+
 class MyDataset(Dataset):
     def __init__(self, activity, label, ratio):
         self.data = activity
@@ -31,7 +31,7 @@ class MyDataset(Dataset):
 
     def __len__(self):
         return len(self.label)
-
+'''
 
 # prepare dataset
 import os

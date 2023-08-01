@@ -21,7 +21,6 @@ import copy
 import sys
 sys.path.append("json2mysql")
 from log import ApiLog
-
 classes = ['ddos1', 'ddos2', 'infiltration', 'http_dos', 'brute_force', 'Andariel', 'APT29', 'AZORult', 'IcedID', 'Raccon', 'Heartbleed', 'Wannacry']
 
 # hyper-parameter
@@ -38,11 +37,8 @@ print("The model will be running on", device, "device\n")
 
  
 # Training Function
-def trainLstm(train_loader, test_loader):
-    log_name = "log/doc_lstm_train2_2.log"
-    log = ApiLog(log_name)
-    log.logger.debug("------- Attack Activity train -------")
-
+def trainLstm(train_loader, test_loader, log):
+    
     # LSTM model
     lstm_model = mlstm.LstmRNN(input_size = INPUT_FEATURES_NUM, hidden_size = HIDDEN_SIZE, output_size = OUTPUT_FEATURES_NUM, 
                                 num_layers = LAYERS_NUM)
@@ -140,11 +136,7 @@ def trainLstm(train_loader, test_loader):
 
 
 # Function to test the model 
-def testLstm(test_loader):
-    log_name = "log/doc2vec_lstm_64.log"
-    log = ApiLog(log_name)
-    log.logger.debug("------- Attack Activity test -------")
-
+def testLstm(test_loader, log):
     lstm_model = torch.load("checkout/doc2vec_64_lstmModel.t")
     lstm_model.to(device)
 
